@@ -1,0 +1,81 @@
+
+
+.container__principal--title {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 2.6rem;
+  padding: 3rem 0 1rem 0;
+  color: white;
+  
+}
+.container__principal--subtitle {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1rem;
+  color: white;
+}
+.container__principal--all-services {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container__principal--services {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 330px;
+  height: auto;
+  border-radius: 4px;  
+  padding: 1rem 1rem;
+  transition: all 0.4s ease-in-out;
+}
+
+
+
+.container__principal--services > div > p {
+  color: rgb(208, 208, 208);
+}
+
+.container__principal--services:hover {
+  background-color: white;
+  transform: scale(1.02);
+}
+
+.container__principal--services:hover div > h3 {
+  color: black;
+}
+
+.container__principal--services:hover div > p {
+  color: black;
+}
+
+#container__principal--services-1:hover > img {
+  content: url('../images/icones/living-room-blue-1.png');
+}
+
+#container__principal--services-2:hover > img {
+  content: url('../images/icones/plan-blue-1.png');
+}
+
+#container__principal--services-3:hover > img {
+  content: url('../images/icones/enterprise-blue-1.png');
+}
+
+.image__service {
+  width: 63px;
+  height: 60px;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+}
+
+.image__service:hover {
+  width: 63px;
+  height: 60px;
+  margin-right: 1rem;
+}

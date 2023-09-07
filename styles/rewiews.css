@@ -1,0 +1,40 @@
+.container__principal--reviews{
+    height: 100vh;
+}
+.container__reviews--title > h2 {
+padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+text-align: left;
+}
+
+.container__reviews--title > h1 {
+padding: 0 1.5rem;
+text-align: left;
+padding-bottom: 2rem;
+}
+
+.container__principal--customers {
+    display: flex;  
+    flex-wrap: nowrap ;  
+    justify-content: center;
+    gap: 2rem;
+  }
+
+.container__principal--customers > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    height: auto;
+    gap: 1rem;
+}
+
+
+.container__principal--customers > div > p {
+    width: 22rem;
+    text-align: center;   
+    height: auto;    
+}
+
+.text_style_headline_nunito-b{
+    color: var(--color_color_primary_highlights);
+}

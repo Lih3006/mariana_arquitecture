@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+*,html{
+  scroll-behavior: smooth !important ;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1612px;
+  height: 100vh;
+  width: 100%;
+  background-color: white;  
+  
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+:root {
+  --color_color_primary: rgba(134, 124, 109, 1);
+  --color_color_primary_highlights: rgba(167, 103, 76, 1);
+  --color_color_secondary: rgba(119, 81, 85, 1);
+  --color_dark_brown: rgba(51, 30, 32, 1);
+  --color_brown_100: rgba(158, 155, 144, 1);
+  --color_brown_50: rgba(165, 155, 134, 1);
+  --color_brown_10: rgba(221, 217, 210, 1);
+  --color_feedback_negative: rgba(220, 103, 54, 1);
+  --color_feedback_warning: rgba(191, 164, 62, 1);
+  --color_feedback_sucess: rgba(129, 172, 128, 1);
+  --color_feedback_information: rgba(152, 204, 211, 1);
+}
+.text_style_title_1_montserrat {
+  font-size: 2.5rem;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  line-height: 34px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.text_style_title_form_montserrat {
+  font-size: 1.75rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 34px;
+  text-decoration: none;
+  text-transform: none;
+  padding: 1rem 0;
+}
+
+.text_style_title_strong_montserrat {
+  font-size: 1.75rem;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  line-height: 34px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_title_2_montserrat {
+  font-size: 1.375rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_title_3_montserrat {
+  font-size: 1.125rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_title_4_montserrat {
+  font-size: 0.875rem;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_headline_montserrat {
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_body_montserrat {
+  font-size: 0.875rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--color_color_primary_highlights);
+}
+.text_style_body_600_montserrat {
+  font-size: 0.875rem;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_caption_montserrat {
+  font-size: 0.75rem;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_title_1_nunito {
+  font-size: 1.625rem;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-style: normal;
+  line-height: 34px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_title_2_nunito {
+  font-size: 1.375rem;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_title_3_nunito {
+  font-size: 1.125rem;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_headline_nunito {
+  font-size: 1rem;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+}
+.text_style_body_nunito {
+  font-size: 0.875rem;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: #a7a7a7;
+}
+#text_style_black {
+  color: black;
+}
+.text_style_body_600_nunito {
+  font-size: 0.875rem;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--color_feedback_information);
+}
+
+.text_style_caption_nunito {
+  font-size: 0.75rem;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-style: normal;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.button__up{
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 1002;
+}
+
+.button__up >i{
+  text-decoration: none;
+  font-size: 2rem; 
+  color: var(--color_brown_50);
+  font-size: 2.2rem;
+} 
