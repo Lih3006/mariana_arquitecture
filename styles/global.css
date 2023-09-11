@@ -9,12 +9,14 @@ body {
   font-family: 'Inter', sans-serif;
   margin: 0 auto;
   padding: 0;
-  max-width: 1612px;
+ /*  max-width: 1612px; */
   height: 100vh;
   width: 100%;
   background-color: white;  
   
 }
+
+
 
 body::-webkit-scrollbar{
     display: none;
@@ -201,7 +203,7 @@ body::-webkit-scrollbar{
   position: fixed;
   right: 1rem;
   bottom: 1rem;
-  z-index: 1002;
+  z-index: 1000;
 }
 
 .button__up >i{
@@ -210,3 +212,10 @@ body::-webkit-scrollbar{
   color: var(--color_brown_50);
   font-size: 2.2rem;
 } 
+
+@media(min-width:768px){
+  .button__up{
+  right: 1.3rem;
+  bottom: 5rem;
+}
+}

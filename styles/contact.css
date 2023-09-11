@@ -1,7 +1,8 @@
 .container__principal--contacts{
-    margin-top: 2rem;
+    margin-top: 0rem;
     padding: 1rem;
-     margin-bottom: 2rem;
+    margin-bottom: 2rem;
+    height: 60vh;
 }
 
 .containeir__form{
@@ -72,3 +73,6 @@
     
 }
 
+@media(min-width:912px){
+
+}

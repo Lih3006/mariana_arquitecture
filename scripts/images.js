@@ -4,7 +4,7 @@
 const imageModel = {
     id: 19,
     name: 'image54',
-    url: '../images/gallery/Residencial/residencial_(54).jpg',
+    url: './images/gallery/Residencial/residencial_(54).jpg',
     category: 'residencial'
 }
 
@@ -31,6 +31,7 @@ let projectInterior = document.getElementById('carousel__interior')
 let projectComercial = document.getElementById('carousel__comercial')
 let projectResidencial = document.getElementById('carousel__residencial')
 let projectAmbiente = document.getElementById('carousel__ambiente')
+let projectSection = document.getElementsByClassName('projects_carousel')
 
 
 
@@ -51,20 +52,21 @@ const newImage = (data) =>{
 
         projectInterior.addEventListener('click', function(e){          
             if (data[i].category === 'interior'){
-                console.log(data[i].category)
-            projectInterior.setAttribute('href',`${data[i].url}`)
-            projectInterior.appendChild(event)
-        //element.appendChild(event)
-            event.appendChild(image)}
+            console.log(data[i].category)
+            projectInterior.setAttribute('href',`${data[i].url}`)            
+            projectInterior.appendChild(event)      
+            projectSection.style.display = "none"
+            event.appendChild(image)
+            }
         })       
-       
+
         projectComercial.addEventListener('click', function(e){          
             if (data[i].category === 'comercial'){
-                console.log(data[i].category)
+            console.log(data[i].category)
             projectComercial.setAttribute('href',`${data[i].url}`)
             projectComercial.setAttribute('href',`${data[i].url}`)
-            projectComercial.appendChild(event)
-        //element.appendChild(event)
+            projectComercial.appendChild(event)        
+            projectSection.style.display = "none"
             event.appendChild(image)}
         }) 
 
@@ -73,8 +75,8 @@ const newImage = (data) =>{
             if (data[i].category === 'residencial'){
                 console.log(data[i].category)
             projectResidencial.setAttribute('href',`${data[i].url}`)
-            projectResidencial.appendChild(event)
-        //element.appendChild(event)
+            projectResidencial.appendChild(event)        
+            projectSection.style.display = "none"
             event.appendChild(image)}
         }) 
 
@@ -84,32 +86,10 @@ const newImage = (data) =>{
                 console.log(data[i].category)
             projectAmbiente.setAttribute('href',`${data[i].url}`)
             projectAmbiente.appendChild(event)
-        //element.appendChild(event)
+            projectSection.style.display = "none"
             event.appendChild(image)}
         }) 
         
-        /* if (data[i].category === 'comercial'){
-            projectComercial.setAttribute('href',`${data[i].url}`)
-            projectComercial.appendChild(event)
-        //element.appendChild(event)
-            event.appendChild(image)
-        }
-        if (data[i].category === 'residencial'){
-            projectComercial.setAttribute('href',`${data[i].url}`)
-            projectResidencial.appendChild(event)
-        //element.appendChild(event)
-            event.appendChild(image)
-        }
-        else{
-            projectAmbiente.appendChild(event)
-        //element.appendChild(event)
-            event.appendChild(image)
-        } */
-
-
-        //projectList.appendChild(event)
-        //element.appendChild(event)
-        //event.appendChild(image)
     }
 }
 

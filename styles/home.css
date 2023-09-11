@@ -1,5 +1,9 @@
 
 
+.container__home{
+  height: 100vh;
+}
+
 .container__principal--title {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -78,4 +82,36 @@
   width: 63px;
   height: 60px;
   margin-right: 1rem;
+}
+
+@media(min-width:768px){
+
+  .container__home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .container__principal--title {  
+  margin-top: 2rem;
+  font-weight: 200;
+  font-size: 5rem;  
+}
+.container__principal--subtitle {
+  font-weight: 200;
+  font-size: 1.5rem;  
+}  
+
+.container__principal--all-services{
+  margin-top: 0;
+  gap: 2rem;
+}
+
+
+.container__principal--services {
+  height: 9rem;
+  width: 22rem;
+}
+
 }

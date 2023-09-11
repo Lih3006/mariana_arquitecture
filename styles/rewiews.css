@@ -13,11 +13,24 @@ padding-bottom: 2rem;
 }
 
 .container__principal--customers {
-    display: flex;  
-    flex-wrap: nowrap ;  
-    justify-content: center;
-    gap: 2rem;
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row; 
+    flex-wrap: nowrap ;     
+    overflow-y: hidden;
+    overflow-x: scroll;  
+    height: 70vh;
+    width: 110%;
+    padding-right: 2.2rem;
+    
   }
+
+.container__principal--customers::-webkit-scrollbar  {
+    display: none;
+  }
+
+
 
 .container__principal--customers > div {
     display: flex;
@@ -26,15 +39,68 @@ padding-bottom: 2rem;
     align-items: center;   
     height: auto;
     gap: 1rem;
+    width: 110%;
+   
 }
+
+
+
 
 
 .container__principal--customers > div > p {
-    width: 22rem;
+    min-width: 100vw;
+    padding: 1rem;
     text-align: center;   
-    height: auto;    
-}
+    height: auto; 
+    }
 
 .text_style_headline_nunito-b{
     color: var(--color_color_primary_highlights);
+}
+
+.container__reviews--wrap {
+text-align: center;
+margin: 1rem;
+}
+
+.container__reviews--wrap > button > i{
+    background-color: white;        
+    font-size: 1.75rem;
+    padding: .5rem;
+    color: var(--color_color_primary_highlights)
+    
+}
+
+#backBtn, #nextBtn{
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+#backBtn:hover, #nextBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media(min-width:768px){
+
+    .container__principal--customers {        
+        height: 50vh;
+        padding-right: 7rem;
+        
+    }
+    .container__principal--customers > div > p {
+        min-width: 100vw;
+        padding: 0 7rem;
+        margin: 0 auto;
+                
+    }
+}
+
+@media(min-width:912px){
+     .container__principal--customers {        
+        height: 40vh;
+        padding-right: 7rem;
+        
+    }
 }

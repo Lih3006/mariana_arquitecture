@@ -32,6 +32,7 @@
     <script type="module" src="./scripts/hamburguer_menu.js" defer></script>
     <script src="./scripts/data.js" defer></script>
     <script src="./scripts/images.js" defer></script>
+    <script src="./scripts/reviews.js" defer></script>
     <script src="./node_modules/lightbox2/dist/js/lightbox-plus-jquery.js" defer></script>
    
 
@@ -61,27 +62,39 @@
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
           </div>
+          <div class="header__section header_section--contacts">
+            <a class="text_style_headline_montserrat text__email--mobile"
+              ><i class="fa-solid fa-envelope"></i> mariana@mail.com</a
+            >
+            <a class="text_style_headline_montserrat text__phone--mobile" href="
+https://wa.me/+5511997004949?text=Ol%C3%A1!%20Obrigada%20por%20entrar%20em%20contato%20com%20Mariana%20Arquitetura%20e%20Interiores.%20Estou%20aqui%20para%20ajudar%20voc%C3%AA%20a%20transformar%20seus%20projetos%20em%20realidade.%20Por%20favor,%20deixe%20sua%20mensagem%20e%20logo%20retornarei%20para%20discutir%20suas%20ideias%20e%20necessidades.%20Tenha%20um%20%C3%B3timo%20dia!
+"
+              ><i class="fa-solid fa-phone"></i> +55 11 99700 4949</a
+            >
+          </div>
           <div class="header__mobile">
           <div class="header__section header_section--contacts">
             <a class="text_style_headline_montserrat text__email--mobile"
               ><i class="fa-solid fa-envelope"></i> mariana@mail.com</a
             >
-            <a class="text_style_headline_montserrat" href=""
+            <a class="text_style_headline_montserrat" href="
+https://wa.me/+5511997004949?text=Ol%C3%A1!%20Obrigada%20por%20entrar%20em%20contato%20com%20Mariana%20Arquitetura%20e%20Interiores.%20Estou%20aqui%20para%20ajudar%20voc%C3%AA%20a%20transformar%20seus%20projetos%20em%20realidade.%20Por%20favor,%20deixe%20sua%20mensagem%20e%20logo%20retornarei%20para%20discutir%20suas%20ideias%20e%20necessidades.%20Tenha%20um%20%C3%B3timo%20dia!
+"
               ><i class="fa-solid fa-phone"></i> +55 11 99700 4949</a
             >
           </div>
           <div class="header__menu--dropdown">
             <div class="header__menu">
-            <img class="icon__menu" src="../images/hamburger.png" alt="">
-            <img class="icon__close" src="../images/close.png" alt=""></div>
+            <img class="icon__menu" src="./images/hamburger.png" alt="">
+            <img class="icon__close" src="./images/close.png" alt=""></div>
           <ul class="header__section header__section--list">
           <li> <a class="header__section--menu" href="#home">Home</a></li>
-            <li> <a class="header__section--menu" href="#about">Sobre</a></li>
+            <li> <a class="header__section--menu" href="#about__mobile">Sobre</a></li>
             <li> <a class="header__section--menu" href="#projects">Projetos</a></li>
-            <li> <a class="header__section--menu" href="#home">Serviços</a></li>
+            <li> <a class="header__section--menu" href="#home" style="display: none;">Serviços</a></li>
             <li> <a class="header__section--menu" href="#reviews">Avaliações</a></li>
             <li> <a class="header__section--menu" href="#contact">Contato</a></li>
-            <li> <a class="header__section--menu" href="">Acesso Cliente</a></li>
+            <li> <a style="display: none;" class="header__section--menu" href="">Acesso Cliente</a></li>
           </ul>           
           </div>
         </section>
@@ -91,18 +104,20 @@
             Mariana Oliveira
           </div>
           <nav class="header_section header__section--navbar">
-            <a href="">Home</a>
-            <a href="">Sobre</a>
-            <a href="">Projetos</a>
-            <a href="">Serviços</a>
-            <a href="">Contato</a>
-            <a href="">Acesso Cliente</a>
+            <a href="#home">Home</a>
+            <a href="#about__desktop">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#home" style="display: none;">Serviços</a>
+            <a href="#reviews">Avaliações</a>
+            <a href="#contact">Contato</a>
+            <a href="" style="display: none;">Acesso Cliente</a>
           </nav>
         </section>
       </header>
       
       <main class="container__principal">
         <!-- HOME -->
+        <div class="container__home">
         <div   class="container__principal container__principal--company">
           <h1 class="container__principal container__principal--title">
             Mariana Oliveira
@@ -120,7 +135,7 @@
             <img
             id="image__service-1"            
             class="image__service"
-            src="../images/icones/living-room-white.png"
+            src="./images/icones/living-room-white.png"
               alt=""
               
             />
@@ -140,7 +155,7 @@
             <img
             
               id="image__service-2"
-              class="image__service" src="../images/icones/plan-white.png"
+              class="image__service" src="./images/icones/plan-white.png"
               alt=""
             />
 
@@ -160,7 +175,7 @@
             <img          
               id="image__service-3"
               class="image__service"
-              src="../images/icones/enterprise-white.png"
+              src="./images/icones/enterprise-white.png"
               alt=""
             />
             <div>
@@ -172,50 +187,15 @@
             </div>
           </section>
         </div>
-            <!-- Projects -->
-        <section id="projects" class="container__principal--projects">
-          <div class></div>
-          <div class="container__projects--description">
-            <h2 class="text_style_body_montserrat">PROJETOS</h2>
-            <h1 class="text_style_title_1_montserrat">PROJETOS</h1>
-            </div>
-            <section aria-label="section__projects">
-              <div class="projects_carousel">
-            <a id="carousel__interior" href="../images/icones/living-room-blue-1.png" data-lightbox="interior"> 
-            <img src="../images/icones/living-room-blue-1.png" alt="" />
-            <p class="text_style_headline_montserrat">Interiores</p>
-          </a>
-          <a id="carousel__comercial" href="../images/icones/enterprise-blue-1.png" data-lightbox="comercial">
-            <img src="../images/icones/enterprise-blue-1.png" alt="" />
-            <p  class="text_style_headline_montserrat">Comercial</p>
-          </a>
-          <a id="carousel__residencial" href="../images/icones/plan-blue-1.png" data-lightbox="residencial">
-            <img src="../images/icones/plan-blue-1.png" alt="" />
-            <p  class="text_style_headline_montserrat">Residencial</p>
-          </a>
-          <a id="carousel__ambiente" href="../images/icones/interior-design-blue-1.png" data-lightbox="ambiente">
-            <img src="../images/icones/interior-design-blue-1.png" alt="" />
-            <p  class="text_style_headline_montserrat">Ambiente</p>
-          </a>
-          </div>
-        <ul id="list__projects" class="container__projects--types">
-          <!--  <li>
-            <div>
-            <img src="../images/principal.png" alt="" />
-            </div>
-            <p></p>
-          </li> -->         
-        </ul> 
-       
-        </section>
-        </section>
+        </div>
 
         <!-- About -->
-        <section class="container__principal--quality">
+        <section id="about__desktop">
+        <section id="about" class="container__principal--quality">
           <section
             class="container__principal--section container__principal--section-soluctions"
           >
-            <img src="../images/soluctions.png" class="image_about" alt="" />
+            <img src="./images/soluctions.png" class="image_about" alt="" />
             <div>
               <h3 id="text_style_black" class="text_style_body_600_nunito">Soluções criativas</h3>
               <p id="text_style_black" class="text_style_body_nunito">
@@ -227,7 +207,7 @@
           <section
             class="container__principal--section container__principal--section-confort"
           >
-            <img src="../images/confort.png" class="image_confort" alt="" />
+            <img src="./images/confort.png" class="image_confort" alt="" />
 
             <div>
               <h3 id="text_style_black" class="text_style_body_600_nunito">Conforto</h3>
@@ -240,7 +220,7 @@
           <section
             class="container__principal--section container__principal--section-intuitiv"
           >
-            <img src="../images/intuitiv.png" class="image_intuitiv" alt="" />
+            <img src="./images/intuitiv.png" class="image_intuitiv" alt="" />
             <div>
               <h3 id="text_style_black" class="text_style_body_600_nunito">Design intuitivo</h3>
               <p id="text_style_black" class="text_style_body_nunito">
@@ -250,14 +230,16 @@
             </div>
           </section>
         </section>
-        <section id="about" class="container__principal container__principal--about">
+        <section class="container__principal container__principal--about">
         
           <div class="container__about container__about--description">
             <h2 class="text_style_body_montserrat">SOBRE</h2>
             <h1 class="text_style_title_1_montserrat">SOBRE</h1>
-              <div class="container__about container__about--image">
-            <img src="../images/mariana.png" class="image__about" alt="" />
+            <div class="container__about__desktop">
+            <div class="container__about container__about--image">
+            <img src="./images/mariana.jpg" class="image__about" alt="" />
           </div>
+          <div  class="container__about container__about--text">
             <p  id="container__about" class="text_style_headline_nunito">
               Olá! Meu nome é Mariana Oliveira.
               </p>
@@ -298,10 +280,138 @@
               sinto privilegiada por fazer parte da vida das pessoas, tornando
               seus espaços em verdadeiros lares e ambientes comerciais
               acolhedores e atraentes.</p>
-            
           </div>
+            </div>
+          </div>
+        </section>   
+        </section> 
+        <!-- Projects -->
+        <section id="projects" class="container__principal--projects">          
+          <div class="container__projects--description">
+            <h2 class="text_style_body_montserrat">PROJETOS</h2>
+            <h1 class="text_style_title_1_montserrat">PROJETOS</h1>
+            </div>
+            <section aria-label="section__projects" class="section__projects">
+              <div class="projects_carousel">
+            <a id="carousel__interior" href="./images/icones/living-room-blue-1.png" data-lightbox="interior"> 
+            <img src="./images/icones/living-room-blue-1.png" alt="" />
+            <p class="text_style_headline_montserrat">Interiores</p>
+          </a>
+          <a id="carousel__comercial" href="./images/icones/enterprise-blue-1.png" data-lightbox="comercial">
+            <img src="./images/icones/enterprise-blue-1.png" alt="" />
+            <p  class="text_style_headline_montserrat">Comercial</p>
+          </a>
+          <a id="carousel__residencial" href="./images/icones/plan-blue-1.png" data-lightbox="residencial">
+            <img src="./images/icones/plan-blue-1.png" alt="" />
+            <p  class="text_style_headline_montserrat">Residencial</p>
+          </a>
+          <a id="carousel__ambiente" href="./images/icones/interior-design-blue-1.png" data-lightbox="ambiente">
+            <img src="./images/icones/interior-design-blue-1.png" alt="" />
+            <p  class="text_style_headline_montserrat">Ambiente</p>
+          </a>
+              </div>
+              <div id="list__projects" class="container__projects--types">    
+            <img src="./images/principal.png" alt="" />  
+              </div> 
         </section>
-    
+        </section>
+
+        <!-- About -->
+        <section id="about__mobile">
+        <section id="about" class="container__principal--quality">
+          <section
+            class="container__principal--section container__principal--section-soluctions"
+          >
+            <img src="./images/soluctions.png" class="image_about" alt="" />
+            <div>
+              <h3 id="text_style_black" class="text_style_body_600_nunito">Soluções criativas</h3>
+              <p id="text_style_black" class="text_style_body_nunito">
+                integração de espaços, uso inteligente de materiais e tecnologia
+                para transformar sonhos em realidade.
+              </p>
+            </div>
+          </section>
+          <section
+            class="container__principal--section container__principal--section-confort"
+          >
+            <img src="./images/confort.png" class="image_confort" alt="" />
+
+            <div>
+              <h3 id="text_style_black" class="text_style_body_600_nunito">Conforto</h3>
+              <p id="text_style_black" class="text_style_body_nunito">
+                Espaços que acolhem, com ambientes funcionais e aconchegantes,
+                garantindo bem-estar e qualidade de vida.
+              </p>
+            </div>
+          </section>
+          <section
+            class="container__principal--section container__principal--section-intuitiv"
+          >
+            <img src="./images/intuitiv.png" class="image_intuitiv" alt="" />
+            <div>
+              <h3 id="text_style_black" class="text_style_body_600_nunito">Design intuitivo</h3>
+              <p id="text_style_black" class="text_style_body_nunito">
+                Fluxos intuitivos, ergonomia e harmonia visual, proporcionando
+                experiências fluidas e gratificantes.
+              </p>
+            </div>
+          </section>
+        </section>
+        <section class="container__principal container__principal--about">
+        
+          <div class="container__about container__about--description">
+            <h2 class="text_style_body_montserrat">SOBRE</h2>
+            <h1 class="text_style_title_1_montserrat">SOBRE</h1>
+            <div class="container__about__desktop">
+            <div class="container__about container__about--image">
+            <img src="./images/mariana.jpg" class="image__about" alt="" />
+          </div>
+          <div  class="container__about container__about--text">
+            <p  id="container__about" class="text_style_headline_nunito">
+              Olá! Meu nome é Mariana Oliveira.
+              </p>
+              <br />
+              <p  id="container__about" class="text_style_headline_nunito">
+              Na minha jornada profissional, descobri que o verdadeiro encanto
+              está na concepção e criação de espaços que transmitam
+              personalidade e proporcionem bem-estar aos meus clientes.</p>
+              <br />
+              <p  id="container__about" class="text_style_headline_nunito">
+              Com uma equipe talentosa e comprometida, embarcamos juntos em cada
+              projeto, desde o design de interiores até os projetos residenciais
+              e comerciais.
+              </p>
+              <br>
+              <p  id="container__about" class="text_style_headline_nunito">
+                Acredito que a colaboração e troca de ideias são
+              fundamentais para alcançar resultados excepcionais. Cada projeto é
+              único e desafiador, e mergulhar nesse processo criativo é o que me
+              inspira a superar limites e buscar soluções inovadoras.</p>
+              <br />
+              <p  id="container__about" class="text_style_headline_nunito">
+              O Projeto é onde minha imaginação ganha vida. Desde o primeiro
+              contato com o cliente até a entrega final, mergulho na essência de
+              suas necessidades, sonhos e preferências. É nessa fase que
+              exploramos possibilidades, testamos materiais, cores e texturas, e
+              criamos um conceito que se tornará a base de todo o trabalho.</p>
+              <br />
+              <p  id="container__about" class="text_style_headline_nunito">
+              Ver a transformação acontecer diante dos meus olhos é a maior
+              recompensa. Ver a satisfação dos meus clientes e saber que
+              consegui criar um ambiente que reflete suas personalidades e
+              atende às suas expectativas é algo incrível. 
+              </p>
+              <br>
+              <p  id="container__about" class="text_style_headline_nunito">
+                Amo o que faço e me
+              sinto privilegiada por fazer parte da vida das pessoas, tornando
+              seus espaços em verdadeiros lares e ambientes comerciais
+              acolhedores e atraentes.</p>
+          </div>
+            </div>
+          </div>
+        </section>   
+        </section> 
         <!-- rewiews -->
         <section id="reviews" class="container__principal container__principal--reviews">
         <div class="container__reviews container__reviews--title">
@@ -310,7 +420,7 @@
         </div>
         <section class="container__principal--customers">        
           <div>
-            <img src="../images/customer.png" alt="" />
+            <img src="./images/customer.png" alt="" />
             <h3 class="text_style_title_3_nunito">Beatriz</h3>
             <p class="text_style_headline_nunito-b">Quarto de Bebe</p>
             <p class="text_style_headline_nunito">
@@ -323,7 +433,7 @@
             </p>
           </div>
           <div>
-            <img src="../images/customer.png" alt="" />
+            <img src="./images/customer.png" alt="" />
             <h3 class="text_style_title_3_nunito">Mari Rosa</h3>
             <p class="text_style_headline_nunito-b">Salão de Beleza</p>
             <p class="text_style_headline_nunito">
@@ -336,7 +446,7 @@
             </p>
           </div>
           <div>
-            <img src="../images/customer.png" alt="" />
+            <img src="./images/customer.png" alt="" />
             <h3 class="text_style_title_3_nunito">Roberta</h3>
             <p class="text_style_headline_nunito-b">Apartamento</p>
             <p class="text_style_headline_nunito">
@@ -348,6 +458,14 @@
             </p>
           </div>
           </section>
+          <div class="container__reviews--wrap">
+            <button>              
+              <i class="fa-solid fa-circle-arrow-left" id="backBtn"></i>
+            </button>
+            <button>             
+            <i class="fa-solid fa-circle-arrow-right" id="nextBtn"></i>
+            </button>
+          </div>
         </section>
         <!-- Contact -->
         <section id="contact" class="container__principal container__principal--contacts">
