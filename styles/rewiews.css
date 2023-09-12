@@ -2,12 +2,12 @@
     height: 100vh;
 }
 .container__reviews--title > h2 {
-padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+padding: 1.5rem 0.725rem 0.5rem 0.725rem;
 text-align: left;
 }
 
 .container__reviews--title > h1 {
-padding: 0 1.5rem;
+padding: 0 .725rem;
 text-align: left;
 padding-bottom: 2rem;
 }
@@ -20,15 +20,15 @@ padding-bottom: 2rem;
     flex-wrap: nowrap ;     
     overflow-y: hidden;
     overflow-x: scroll;  
-    height: 70vh;
+    height: auto;
     width: 110%;
     padding-right: 2.2rem;
     
-  }
+}
 
 .container__principal--customers::-webkit-scrollbar  {
     display: none;
-  }
+}
 
 
 
@@ -40,7 +40,6 @@ padding-bottom: 2rem;
     height: auto;
     gap: 1rem;
     width: 110%;
-   
 }
 
 
@@ -82,6 +81,19 @@ margin: 1rem;
     transform: scale(1.1);
 }
 
+@media(min-width:360px){
+.container__reviews--title > h1 {
+padding: 0 1.5rem;
+text-align: left;
+padding-bottom: 2rem;
+}
+
+.container__reviews--title > h2 {
+padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+
+}
+}
+
 @media(min-width:768px){
 
     .container__principal--customers {        
@@ -107,21 +119,41 @@ margin: 1rem;
 
 
 @media(min-width:1200px){
-     .container__principal--customers {
-        width: 100vw;
-        padding: 0 1rem;       
-        height: 60vh;       
-        justify-content: center;
+
+.container__reviews--title > h2 {
+    max-width: 1400px;
+    text-align: left;
+    padding-top: 4rem;
+    margin: 0 auto;
+    }
+
+.container__reviews--title > h1 {
+    max-width: 1400px;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    }
+    
+    .container__principal--customers {
         align-items: center;
-        
+        justify-content: space-between;
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     .container__principal--customers > div > img{
     margin-top: 5rem;
     }
     .container__principal--customers > div > p {
-    min-width: 30vw;
+    min-width: 10vw;
     padding: .2rem 1rem;
     text-align: center;   
     height: auto; 
-    }}
+    }
+}
+
+@media (orientation: landscape) {
+.container__principal--customers{
+    height: auto;
+}
+}

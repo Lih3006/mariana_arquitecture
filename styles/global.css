@@ -216,6 +216,6 @@ body::-webkit-scrollbar{
 @media(min-width:768px){
   .button__up{
   right: 1.3rem;
-  bottom: 5rem;
+  bottom: 2rem;
 }
 }
