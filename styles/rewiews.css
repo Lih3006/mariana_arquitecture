@@ -98,9 +98,30 @@ margin: 1rem;
 }
 
 @media(min-width:912px){
-     .container__principal--customers {        
+    .container__principal--customers {        
         height: 40vh;
         padding-right: 7rem;
         
     }
 }
+
+
+@media(min-width:1200px){
+     .container__principal--customers {
+        width: 100vw;
+        padding: 0 1rem;       
+        height: 60vh;       
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .container__principal--customers > div > img{
+    margin-top: 5rem;
+    }
+    .container__principal--customers > div > p {
+    min-width: 30vw;
+    padding: .2rem 1rem;
+    text-align: center;   
+    height: auto; 
+    }}

@@ -104,20 +104,33 @@
 @media(min-width:1200px){
   #list__projects > img {  
   display: block;
-  width:80%;
-  height: auto;
-  padding: 1rem;
+  width:40vw;
+  height: auto; 
+  margin: 2.5rem; 
+  padding: 0;
 
 }
 
 .projects_carousel{
   display: flex;
-  max-width: 35vw;
+  max-width: 45vw;
   flex-direction: row;
-  flex-wrap: nowrap;
-  height: 20vh;
+  flex-wrap: wrap;
+  height: 70vh;
   margin-right:3rem ;
+  margin-bottom: 4rem;
+  transition: 1.5s;
 
+}
+
+.projects_carousel > a {
+ padding: 4rem;
+
+}
+.section__projects{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center
 }
 
 }

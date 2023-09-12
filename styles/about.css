@@ -118,9 +118,23 @@
 
 @media(min-width:1300px){
   .text_style_headline_nunito {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
+.container__principal--quality{
+  gap: 8rem;
+}
+
+  .container__about--image {
+  width: 43vw;
+  margin:0
+  } 
+  .container__about__desktop{
+    align-items: center;
+    justify-content: center;
+    
+  }
+
 
 
 }

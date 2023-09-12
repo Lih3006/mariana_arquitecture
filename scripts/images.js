@@ -45,7 +45,7 @@ const newImage = (data) =>{
         image.setAttribute('alt',`Project Image ${data[i].id}`)
         event.setAttribute('href',`${data[i].url}`)
         event.setAttribute('data-alt',`Project Image ${data[i].id}`)       
-        event.setAttribute('data-title',`${data[i].category}`)
+        event.setAttribute('data-title',`${data[i].title}`)
         event.setAttribute('data-lightbox', `${data[i].category}`)
         element.setAttribute('class','image__slide')
         
@@ -53,7 +53,8 @@ const newImage = (data) =>{
         projectInterior.addEventListener('click', function(e){          
             if (data[i].category === 'interior'){
             console.log(data[i].category)
-            projectInterior.setAttribute('href',`${data[i].url}`)            
+            projectInterior.setAttribute('href',`${data[i].url}`)
+            projectInterior.setAttribute('data-title',`${data[i].title}`)            
             projectInterior.appendChild(event)      
             projectSection.style.display = "none"
             event.appendChild(image)
@@ -65,6 +66,7 @@ const newImage = (data) =>{
             console.log(data[i].category)
             projectComercial.setAttribute('href',`${data[i].url}`)
             projectComercial.setAttribute('href',`${data[i].url}`)
+            projectComercial.setAttribute('data-title',`${data[i].title}`)
             projectComercial.appendChild(event)        
             projectSection.style.display = "none"
             event.appendChild(image)}
@@ -75,6 +77,7 @@ const newImage = (data) =>{
             if (data[i].category === 'residencial'){
                 console.log(data[i].category)
             projectResidencial.setAttribute('href',`${data[i].url}`)
+            projectResidencial.setAttribute('data-title',`${data[i].title}`)
             projectResidencial.appendChild(event)        
             projectSection.style.display = "none"
             event.appendChild(image)}
@@ -85,6 +88,7 @@ const newImage = (data) =>{
             if (data[i].category === 'ambiente'){
                 console.log(data[i].category)
             projectAmbiente.setAttribute('href',`${data[i].url}`)
+            projectAmbiente.setAttribute('data-title',`${data[i].title}`)
             projectAmbiente.appendChild(event)
             projectSection.style.display = "none"
             event.appendChild(image)}
