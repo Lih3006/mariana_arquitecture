@@ -122,10 +122,13 @@
 
 }
 
+
+
 @media screen and (orientation: landscape) and (max-width:1200px) {
 .container__principal--company{  
-  margin-top: auto;
+  margin-top: 0 auto;
   height: auto;
+ 
 }
 
  .container__principal--title {  
@@ -136,4 +139,8 @@
  .container__principal--subtitle {
   padding-bottom: 1rem;
  }
+
+ .container__principal--all-services {
+  margin: 0;
+}
 }

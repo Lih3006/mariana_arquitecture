@@ -101,12 +101,12 @@
 
 }
 
-@media(min-width:912px){
+/* @media(min-width:912px){
 #about__desktop{
   height: 100vh;
 }
 
-}
+} */
 
 @media(min-width:1019px){
   .text_style_headline_nunito {
@@ -161,7 +161,10 @@
 @media (orientation: landscape) {
   .container__principal--about{   
   height: auto;
+  padding-bottom: 2rem;
 }
 
 
 }
+
+

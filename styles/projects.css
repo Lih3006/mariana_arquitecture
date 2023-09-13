@@ -156,7 +156,18 @@
 
 @media screen and (orientation: landscape) and (max-width:1200px) {
   .container__principal--projects{ 
-  margin-top: 38rem;  
+  margin-top: 12rem;  
+  height: 100vh;
+}
+
+.projects_carousel{
+  height: auto;
+}
+}
+
+
+@media screen and (orientation: landscape) and (max-width:1400px) {
+  .container__principal--projects{     
   height: auto;
 }
 
@@ -164,3 +175,4 @@
   height: auto;
 }
 }
+
