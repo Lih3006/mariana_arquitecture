@@ -211,7 +211,7 @@ color: white;
 
 .container__background--parallax-bg {
   background-image: url(../images/background_home_light.png);  
-  background-size: 190%;
+  background-size: 170%;
   left: -20rem;
   top: 0rem;
 }}
