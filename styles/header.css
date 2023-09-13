@@ -59,11 +59,11 @@
 .header__section--contacts { 
   display: none;
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: 8px;
 }
 .header__section--contacts a > i {
   color: white;
-  padding: 0.5rem;
+  padding: 8px;
   font-size: 1.275rem;
 }
 
@@ -183,14 +183,14 @@ color: white;
 }
 .header_section--socialmedia{
   display: flex;
-  gap: .725rem; 
+  gap: 11.6px; 
 }
 .header__section--navbar{  
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 0 1rem;
-  gap: 1rem;
+  gap: 16px;
   color: white;
 }
 
@@ -198,7 +198,7 @@ color: white;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 16px;
   color: white;
   text-decoration: none;
 }

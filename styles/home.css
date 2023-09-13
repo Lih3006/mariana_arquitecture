@@ -110,7 +110,7 @@
 .container__principal--all-services{
   justify-content: space-around;
   margin-top: 0;
-  gap: 2rem;
+  gap: 32px;
   max-width: 1400px;
 }
 
