@@ -1,7 +1,7 @@
-.container__principal--projects{
-  background-color: white;
-  margin-top: 4.5rem;
+.container__principal--projects{  
+/*   margin-top: 4.5rem; */
   height: auto;
+  background-color: white;
   
 }
 
@@ -156,7 +156,7 @@
 
 @media screen and (orientation: landscape) and (max-width:1200px) {
   .container__principal--projects{ 
-  margin-top: 12rem;  
+  margin-top: 0;  
   height: 100vh;
 }
 

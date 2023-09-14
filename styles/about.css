@@ -1,8 +1,9 @@
 .container__principal--about{
   background-color: white;
+  height: auto;
 }
 .container__principal--quality {
-  margin-top: 2rem;
+  padding-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,6 +108,14 @@
 }
 
 } */
+
+
+@media(min-width:768px){
+  .container__principal--about{
+ height: 100vh;
+  }
+  
+}
 
 @media(min-width:1019px){
   .text_style_headline_nunito {
