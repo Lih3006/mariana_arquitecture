@@ -1,28 +1,24 @@
-
 .projects_carousel {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
 }
 
-.projects_carousel > a  {
+.projects_carousel > a {
   text-decoration: none;
   color: black;
   cursor: pointer;
-  box-shadow: 4px 6px 16px 2px rgba(74,60,42,0.26);
-  border: .001rem solid rgb(224, 224, 224);
+  box-shadow: 4px 6px 16px 2px rgba(74, 60, 42, 0.26);
+  border: 0.001rem solid rgb(224, 224, 224);
 }
 .projects_carousel > a > img {
-  padding: 1rem ;  
-
+  padding: 1rem;
 }
 
 .projects_carousel > a > p {
   text-align: center;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
   font-weight: 500;
-
 }
